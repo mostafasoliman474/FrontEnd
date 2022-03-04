@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+  <style data="test" type="text/css"></style>
+ 
+</head>
+<body>
+  <div id="container">
+    <div id="themes">
+      <p class="clac">clac</p>
+      <div id="ll">
+        <span class="clac">THEME</span>
+        <div id="slider__div">
+          
+          <div class="slider__option">
+            <small class="clac">1</small>
+            <small class="clac">2</small>
+            <small class="clac">3</small>
+          </div>
+          <input type="range" main="0" max="2" step="1" value="0" class="slider" id="ranger">
+        </div>
+      </div>
+    </div>
+
+    <div class="result__field" id="result__area">
+       <p id="result"> </p>
+    </div>
+   
+    <div id="pad">
+      <div id="numbers">
+        <button class="button__number number__operator numbers" value="7" id="num_7" onclick="display('7')">7</button>
+        <button class="button__number number__operator numbers" value="8" id="num_8" onclick="display('8')">8</button>
+        <button class="button__number number__operator numbers" value="9" onclick="display('9')">9</button>
+        <button class="button__number rest__delete" value="delete" id="DELETE"  >DEL</button>
+        <button class="button__number number__operator numbers" value="4" onclick="display('4')">4</button>
+        <button class="button__number number__operator numbers" value="5" onclick="display('5')">5</button>
+        <button class="button__number number__operator numbers" value="6" onclick="display('6')">6</button>
+        <button class="button__number number__operator numbers" value="+" id="plus" onclick="display('+')">+</button>
+        <button class="button__number number__operator numbers" value="1" onclick="display('1')">1</button>
+        <button class="button__number number__operator numbers" value="2" onclick="display('2')">2</button>
+        <button class="button__number number__operator numbers" value="3" onclick="display('3')">3</button>
+        <button class="button__number number__operator numbers" value="-" onclick="display('-')">-</button>
+        <button class="button__number number__operator numbers" value="." onclick="display('.')">.</button>
+        <button class="button__number number__operator numbers" value="0" onclick="display('0')">0</button>
+        <button class="button__number number__operator numbers" value="/" onclick="display('/')">/</button>
+        <button class="button__number number__operator numbers" value="*" onclick="display('*')">x</button>
+        
+        
+        
+      </div>
+      <div id="last__orders">
+        <button class="button__number rest__delete" id="reset" onclick="clear()" >RESET</button>
+        <button class="button__number equel__button numbers" id="equel" value="=" onclick="solve()">=</button>
+      </div>
+      
+    </div>
+
+  </div>
+  <script src="javascript.js"></script>
+  
+  <div class="attribution" style="padding: 2rem; font-weight: bold;">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Mostafa Mohdy</a>.
+  </div>
+</body>
+</html>
