@@ -1,0 +1,74 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&family=Manrope:wght@800&family=Raleway:ital,wght@0,400;0,600;0,700;1,500&display=swap');
+*{
+    border: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    
+}
+:root{
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+
+}
+body{
+    background: var(--Dark-Blue);
+}
+#advise-card{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: var(--Dark-Grayish-Blue);
+    width: 500px;
+    height: 330px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 15px;
+    padding: 3rem;
+}
+#the-advice{
+    color: var(--Light-Cyan);
+    opacity: .9;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 1rem 2rem 1rem 2rem;
+}
+.id-num{
+    color: var(--Neon-Green);
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+#info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#div-svg{
+    padding: 1rem;
+    background: var(--Neon-Green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 300px;
+    margin: auto;
+}
+#div-svg:hover{
+        box-shadow: 0 0 40px var(--Neon-Green);
+}
