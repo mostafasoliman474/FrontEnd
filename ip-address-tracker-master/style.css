@@ -1,0 +1,139 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&family=Manrope:wght@800&family=Raleway:ital,wght@0,400;0,600;0,700;1,500&family=Rubik:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+:root{
+    --Very-Dark-Gray: hsla(0, 0%, 17%,.9);
+    --Dark-Gray: hsl(0, 0%, 59%);
+}
+
+body{
+    background-color: dimgray;
+}
+#container{
+    width: 100%;
+}
+#main-head{
+    width: 100%;
+    height: 300px;
+    background-image:url(images/pattern-bg.png) ;
+    background-repeat:round ;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+#main-head h1{
+    margin: 2rem 0 1rem 0;
+    color:white;
+}
+#main-head span{
+    display: flex;
+}
+
+#main-head span a{
+    background: var(--Very-Dark-Gray);
+    height: 55px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 10px 10px 0;
+}
+#main-head span input{
+    padding: 1rem;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--Very-Dark-Gray);
+    border-radius: 10px 0 0 10px;
+    width: 450px;
+    height: 55px;
+}
+#inform-div{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    background: white;
+    margin: auto;
+    border-radius: 10px;
+    height: 140px;
+    
+    color: var(--Very-Dark-Gray);
+   z-index: 1000;
+    text-align: left;
+    align-items: baseline;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 230px;
+    padding: 2rem 0 0 0;
+    
+}
+.span-border{
+    border-right: 1px solid hsla(0, 0%, 0%, .2);
+    height: 50px;
+    padding-right: 5rem;
+    padding-left: 2rem;
+   
+}
+#isp-span{
+    padding-left: 1rem;
+}
+.ISP{
+    opacity: .7;
+    font-weight: 700;
+    font-size: 11px;
+    margin-bottom: .8rem;
+    padding-right: 1rem;
+    
+
+
+}
+
+.opacti{
+    opacity: .7;
+    font-weight: 700;
+    font-size: 11px;
+    margin-bottom: .8rem;
+    
+
+}
+.boldy{
+    font-size: 25px;
+    font-weight: 700;
+}
+#display-map{
+    width: 100%;
+    height: 80vh;
+    z-index: 0;
+}
+@media only screen and (max-width: 390px){
+    #main-head span input{
+        width: 250px;
+    }
+    #main-head span{
+        width: 80%;
+    }
+    #inform-div{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        top: 180px;
+    }
+    .span-border{
+        border-right: none;
+        padding: 0;
+        padding-bottom: 5rem;
+        
+    }
+    #isp-span{
+        padding-bottom: 3rem;
+    }
+}
